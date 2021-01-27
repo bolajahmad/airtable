@@ -55,7 +55,9 @@
     "*.{ts, tsx}": ["npm run lint:fix"]
   },
   "husky": {
-    "pre-commit": "lint-staged",
-    "pre-push": "npm run lint"
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm run lint"
+    }
   }
 }
