@@ -27,7 +27,6 @@ export const MainComponentStyles = styled.main`
       display: flex;
 
       aside {
-        margin-top: 1.5em;
         width: 18em;
         min-width: 15em;
 
