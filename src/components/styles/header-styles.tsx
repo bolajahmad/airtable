@@ -141,4 +141,17 @@ export const HeaderComponentStyles = styled.header`
       }
     }
   }
+
+  @media (max-width: 500px) {
+    .navbar {
+      div.last {
+        .nav_menu {
+          width: 7em;
+          label {
+            display: none;
+          }
+        }
+      }
+    }
+  }
 `;

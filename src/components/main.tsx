@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaSearch } from 'react-icons/fa';
 import { default as HistoryIcon, default as SummaryIcon } from '../assets/summary_icon.svg';
 import { METRICS, TableData, UserDetails } from '../utils';
 import { MainComponentStyles } from './styles';
@@ -13,6 +14,12 @@ export const MainComponent: React.FC = () => {
 			</h2>
 
 			<div className="main">
+				<label>
+					<div className="icon">
+						<FaSearch />
+					</div>
+					<input type="search" />
+				</label>
 				<div className="grid col-5">
 					{METRICS.map(({ title, metric}, i) => (
 						<div key={i}>
