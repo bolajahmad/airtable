@@ -8,6 +8,8 @@ import { Table } from './sub-components';
 
 
 const Wrapper = styled.div`
+	max-width: 1024px;
+	
   .name_col {
     display: flex;
     align-items: center;

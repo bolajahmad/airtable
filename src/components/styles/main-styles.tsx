@@ -10,14 +10,16 @@ export const MainComponentStyles = styled.main`
   }
   
   .main {
+    margin: 0 auto;
     margin-top: 1.5em;
+    max-width: 1300px;
 
     & > * + * {
       margin-top: 1em;
     }
 
     .grid.col-5 {
-      grid-template-columns: repeat(5, 18em);
+      grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
       grid-gap: 10px;
     }
 
