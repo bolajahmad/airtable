@@ -1,9 +1,9 @@
 import React from 'react';
 import { default as HistoryIcon, default as SummaryIcon } from '../assets/summary_icon.svg';
-import { METRICS, UserDetails } from '../utils';
+import { METRICS, TableData, UserDetails } from '../utils';
 import { MainComponentStyles } from './styles';
-import { MetricBox } from './sub-components/metric-box';
-
+import { MetricBox } from './sub-components';
+import { TableComponent } from './table.component';
 
 export const MainComponent: React.FC = () => {
 	return (
@@ -65,7 +65,7 @@ export const MainComponent: React.FC = () => {
 					</aside>
 
 					<div className="content_table">
-            
+						<TableComponent data={TableData} />
 					</div>
 				</div>
 			</div>
