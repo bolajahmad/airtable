@@ -1,4 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@font-face {
+    font-family: 'ProductSans';
+    src: url('./assets/productsans-black-webfont.woff') format('woff2'),
+         url('./assets/productsans-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ProductSans';
+    src: url('./assets/productsans-bold-webfont.woff') format('woff2'),
+         url('./assets/productsans-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ProductSans';
+    src: url('./assets/productsans-regular-webfont.woff') format('woff2'),
+         url('./assets/productsans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 :root {
   box-sizing: border-box;
@@ -17,7 +42,7 @@
 
 body {
   margin: 0;
-  font-family: "PT Sans", 'Trebuchet MS', sans-serif;
+  font-family: "ProductSans", 'Trebuchet MS', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

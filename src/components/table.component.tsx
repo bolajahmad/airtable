@@ -8,8 +8,6 @@ import { Table } from './sub-components';
 
 
 const Wrapper = styled.div`
-	max-width: 1024px;
-	
   .name_col {
     display: flex;
     align-items: center;
@@ -31,9 +29,18 @@ const Wrapper = styled.div`
 const RiskColStyle = styled.div<{
   risk: ITableProps['risk'];
 }>`
+
+
+	.ml-1 {
+		margin-left: 1em !important;
+	}
+
+	.img {
+		margin-left: auto;
+		margin-right: 2em;
+	}
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
   color: ${({ risk }) => {
 		if (risk === 'Low') { return '#3AB65C'; }
 		if (risk === 'Mid') { return '#3C3AB6'; }
@@ -86,7 +93,7 @@ export const TableComponent: React.FC<{
 						Header: 'STATUS',
 						accessor: ({ status }: ITableProps) => (
 							<div style={StatusStyle(status)}>
-								{status > 0 ? `${status} issues found` : 'No Issues'}
+								{status > 0 ? `${status} ${status === 1 ? 'issue' : 'issues'} found` : 'No Issues'}
 							</div>
 						)
 					},
@@ -111,11 +118,11 @@ export const TableComponent: React.FC<{
 										{risk === 'Mid'  && <ImArrowRight2 />}
 										{risk === 'High' && <ImArrowUp2 />}
 									</span>
-									<span>
+									<span className="ml-1">
 										{risk} Risk
 									</span>
 								</div>
-								<img src={MenuVertical} alt="" />
+								<img src={MenuVertical} alt="" className="img" />
 							</RiskColStyle>
 						)
 					}

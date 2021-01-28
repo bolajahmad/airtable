@@ -27,8 +27,9 @@ export const MainComponentStyles = styled.main`
       display: flex;
 
       aside {
-        margin-top: 1.5m;
+        margin-top: 1.5em;
         width: 18em;
+        min-width: 15em;
 
         .sidebar {
           .title {
@@ -80,6 +81,21 @@ export const MainComponentStyles = styled.main`
 
               .list_item {
                 color: #747474;
+                position: relative;
+                padding: 0 1em 1em;
+                margin: 0;
+                border-left: 1px dashed currentColor;
+
+                :last-child {
+                  border: none;
+                }
+
+                .bullet {
+                  position: absolute;
+                  font-size: 2.5rem;
+                  top: -0.6em;
+                  left: -0.22em;
+                }
 
                 p {
                   color: #A1AACE;
@@ -97,6 +113,29 @@ export const MainComponentStyles = styled.main`
         background: #FFFFFF;
         box-shadow: 0px 4px 30px rgba(192, 192, 192, 0.25);
         border-radius: 6px;
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .main {
+      .main_content {
+        display: flex;
+        flex-direction: column;
+
+        aside {
+          width: 100%;
+
+          .sidebar {
+            display: flex;
+            flex-wrap: wrap;
+
+            & > div {
+              flex: 1;
+              min-width: 15em;
+            }
+          }
+        }
       }
     }
   }

@@ -48,16 +48,25 @@ export const MainComponent: React.FC = () => {
 
 								<ul className="list">
 									<li className="list_item">
-										<h4>Searched &lsquo;Journal Entries&rsquo; on division module</h4>
-										<p>22:10 15/09/2020 &bull; Web</p>
+										<span className="bullet">&bull;</span>
+										<div>
+											<h4>Searched &lsquo;Journal Entries&rsquo; on division module</h4>
+											<p>22:10 15/09/2020 &bull; Web</p>
+										</div>
 									</li>
 									<li className="list_item">
-										<h4>Searched &lsquo;Fingerptint Record&rsquo; on division module</h4>
-										<p>22:10 15/09/2020 &bull; Web</p>
+										<span className="bullet">&bull;</span>
+										<div>
+											<h4>Searched &lsquo;Fingerptint Record&rsquo; on division module</h4>
+											<p>22:10 15/09/2020 &bull; Web</p>
+										</div>
 									</li>
 									<li className="list_item">
-										<h4>Searched &lsquo;Journal Entries&rsquo; on division module</h4>
-										<p>22:10 15/09/2020 &bull; Web</p>
+										<span className="bullet">&bull;</span>
+										<div>
+											<h4>Searched &lsquo;Journal Entries&rsquo; on division module</h4>
+											<p>22:10 15/09/2020 &bull; Web</p>
+										</div>
 									</li>
 								</ul>
 							</div>
