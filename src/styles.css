@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  box-sizing: border-box;
+  font-size: 87.5%;
+  line-height: 1.5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "PT Sans", 'Trebuchet MS', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+ul, li {
+  list-style: none;
+}
+
+input {
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+}
