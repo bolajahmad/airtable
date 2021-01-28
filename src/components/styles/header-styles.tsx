@@ -74,6 +74,7 @@ export const HeaderComponentStyles = styled.header`
           input {
             height: 2.5em;
             padding: 1em;
+            padding-left: 2em;
             background-color: #FFFFFF;
             border: 1px solid #DCE1E7;
             border-radius: 4px;
@@ -82,7 +83,7 @@ export const HeaderComponentStyles = styled.header`
           .icon {
             position: absolute;
             left: 0.5em;
-            top: 20%;
+            top: 0.75em;
             display: inline;
             color: inherit;
           }
@@ -136,6 +137,19 @@ export const HeaderComponentStyles = styled.header`
               .nav_item {
                 padding-bottom: 1em;
               }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    .navbar {
+      div.last {
+        .nav_menu {
+          width: 7em;
+          label {
+            display: none;
+          }
         }
       }
     }

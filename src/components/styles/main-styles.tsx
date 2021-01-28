@@ -14,6 +14,30 @@ export const MainComponentStyles = styled.main`
     margin-top: 1.5em;
     max-width: 1300px;
 
+    label {
+      display: none;
+      width: 13em;
+      position: relative;
+
+      input {
+        height: 2.5em;
+        padding: 1em;
+        padding-left: 2em;
+        background-color: #FFFFFF;
+        border: 1px solid #DCE1E7;
+        border-radius: 4px;
+      }
+
+      .icon {
+        display: block;
+        position: absolute;
+        left: 0.5em;
+        top: 0.75em;
+        display: inline;
+        color: inherit;
+      }
+    }
+
     & > * + * {
       margin-top: 1em;
     }
@@ -27,7 +51,6 @@ export const MainComponentStyles = styled.main`
       display: flex;
 
       aside {
-        margin-top: 1.5em;
         width: 18em;
         min-width: 15em;
 
@@ -135,6 +158,21 @@ export const MainComponentStyles = styled.main`
               min-width: 15em;
             }
           }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    .main {
+
+      label {
+        display: block;
+        width: 100%;
+        margin-bottom: 1.5em;
+
+        input {
+          width: 100%;
         }
       }
     }
