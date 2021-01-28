@@ -8,8 +8,8 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
   table {
 		font-weight: bold;
-		border-collapse: separate;
-		border-spacing: 0 5px;
+		border-collapse: collapse;
+		border-spacing: 0 0;
 		text-align: left;
 		width: 100%;
 
@@ -17,6 +17,8 @@ const Wrapper = styled.div`
 			padding: 1em 0 1em 1em;
 			vertical-align: middle;
 			position: relative;
+			border: 1px solid;
+			border-color: rgba(183, 183, 183, 0.25) transparent;
 
 			&:first-child {
 				min-width: 10em;
@@ -50,6 +52,43 @@ const Wrapper = styled.div`
 		
 		thead {
 			background-color: #9F9F9F;
+		}
+	}
+
+	@media (max-width: 1000px) {
+		thead {
+			opacity: 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: none;
+		}
+
+		tbody {
+			display: grid;
+			grid-auto-columns: auto;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			gap: 20px;
+		}
+
+		tr {
+			border: 1px solid rgba(183, 183, 183, 0.25);
+		}
+
+		td, th {
+			display: flex;
+			padding: 10px 20px;
+			font-weight: normal;
+			border: none !important;
+			background: none;
+
+			:first-child {
+				margin-top; 10px;
+			}
+
+			:last-child {
+				margin-bottom: 10px;
+			}
 		}
 	}
 `;
