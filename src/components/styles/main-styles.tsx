@@ -88,6 +88,14 @@ export const MainComponentStyles = styled.main`
           }
         }
       }
+
+      .content_table {
+        flex: 1;
+        margin-left: 1em;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 30px rgba(192, 192, 192, 0.25);
+        border-radius: 6px;
+      }
     }
   }
 `;
