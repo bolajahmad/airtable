@@ -9,7 +9,7 @@
 
 ### the challenge
 
-> replicate the design given at [figma here](https://www.figma.com/file/WPwz3rZP4VLN64kCbRw30V/ASB-FE-Test?node-id=0%3A1)
+> replicate the design given at [figma here](https://www.figma.com/file/294fg5esAk4yTOSceRfPOb/airtablefetest)
 
 ### This app is hosted 👉 [here](https://airtablefetest.netlify.app/) 👈 on Netlify! 
 
