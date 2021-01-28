@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+<p align="center">
+  <a href="https://airtable.com/shrI0g6XwuN26lWuV">
+    <img alt="Shopify" src="./src/assets/logo.svg" width="60" />
+  </a>
+</p>
+<h1 align="center">
+  Airtable Frontend Test, 2021
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### the challenge
 
-## Available Scripts
+> replicate the design given at [figma here](https://www.figma.com/file/WPwz3rZP4VLN64kCbRw30V/ASB-FE-Test?node-id=0%3A1)
 
-In the project directory, you can run:
+### This app is hosted 👉 [here](https://airtablefetest.netlify.app/) 👈 on Netlify! 
 
-### `yarn start`
+[![Netlify Status](https://api.netlify.com/api/v1/badges/24065bd4-6c73-4bbc-8c56-c818ea8e3bf0/deploy-status)](https://app.netlify.com/sites/airtablefetest/deploys)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Features
+- implement the given design as closely as best
 
-### `yarn test`
+# Resources
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[Airtable frontend test page](https://airtable.com/shrI0g6XwuN26lWuV)
 
-### `yarn build`
+## Deployment Links
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Front-end**: [Netifly](http://airtablefetest.netlify.app/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Front-end
+ - React
+ - Typescript
 
-### `yarn eject`
+# Getting Started - Front-end Branch
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. fork this repository, then clone your fork of this repository.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```shell 
+git clone https://github.com/bolajahmad/airtable.git
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1. Install dependencies using the npm install command.
+```shell 
+npm i
+```
+3. Navigate into the projects directory and run app.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```shell 
+cd airtable
+npm run start
+```
+1. The app will be served at http://localhost:3000/. Go to http://localhost:3000/ in your browser.
