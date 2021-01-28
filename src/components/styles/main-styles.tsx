@@ -19,7 +19,7 @@ export const MainComponentStyles = styled.main`
     }
 
     .grid.col-5 {
-      grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
       grid-gap: 10px;
     }
 
