@@ -7,7 +7,7 @@ import { HeaderComponentStyles } from './styles';
 
 
 
-export const NavbarComponent: React.FC = () => {
+export const HeaderComponent: React.FC = () => {
 	return (
 		<HeaderComponentStyles>
 			<div className="navbar">

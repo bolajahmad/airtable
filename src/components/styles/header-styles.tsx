@@ -114,4 +114,30 @@ export const HeaderComponentStyles = styled.header`
       }
     }
   }
+
+  @media (max-width: 900px) {
+    .navbar {
+      .logo_wrapper {
+        h1 {
+          display: none;
+        }
+      }
+
+      nav {
+        .nav {
+              max-width: 7em;
+              height: 100%;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              overflow: scroll;
+
+              .nav_item {
+                padding-bottom: 1em;
+              }
+        }
+      }
+    }
+  }
 `;
